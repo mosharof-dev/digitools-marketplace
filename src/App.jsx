@@ -5,6 +5,7 @@ import NavBar from './Components/NavBar/NavBar'
 import Banner from './Components/Banner/Banner'
 import Stats from './Components/Banner/Stats'
 import Footer from './Components/Footer/Footer'
+import CTA from './Components/CTA/CTA'
 
 function App() {
 
@@ -18,10 +19,10 @@ function App() {
      <Banner></Banner>
      <Stats></Stats>
      
-     
-  
+  {/* CTA Section  */}
+   <CTA></CTA>
     {/* Footer Section */}
-    <Footer></Footer>
+  <Footer></Footer>
 
         
     </>
