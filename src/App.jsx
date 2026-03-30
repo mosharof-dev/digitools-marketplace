@@ -7,6 +7,7 @@ import Stats from './Components/Banner/Stats'
 import Footer from './Components/Footer/Footer'
 import CTA from './Components/CTA/CTA'
 import Pricing from './Components/PricingCard/Pricing'
+import StepCard from './Components/StepsSection/StepCard '
 
 function App() {
 
@@ -19,6 +20,8 @@ function App() {
      {/* Banner Section */}
      <Banner></Banner>
      <Stats></Stats>
+  
+  <StepCard></StepCard>
   {/* Pricing Card */}
   <Pricing></Pricing>
   {/* CTA Section  */}

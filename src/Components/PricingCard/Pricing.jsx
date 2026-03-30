@@ -30,7 +30,7 @@ const Pricing = () => {
   ];
 
   return (
-    <section className="bg-[#F8FAFC] py-20 lg:py-28">
+    <section className="bg-[#FFFFFF] py-20 lg:py-28">
       <div className="container mx-auto px-6 lg:px-0">
         
         {/* Header Content */}
