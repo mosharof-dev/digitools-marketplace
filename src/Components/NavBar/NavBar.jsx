@@ -15,7 +15,7 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100">
+    <nav className="bg-white/80 backdrop-blur-md sticky top-0 z-10 border-b border-gray-100">
       <div className="navbar container mx-auto px-4 lg:px-0">
         
         {/* Mobile Menu (Hamburger) */}
