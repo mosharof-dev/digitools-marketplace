@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-[#0B1120] text-slate-400 py-12 lg:py-16">
       
       
-      <div className="container mx-auto px-6 lg:px-0">
+      <div className="container mx-auto px-6 lg:px-8">
         
         {/* Top Part: Footer Columns */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">

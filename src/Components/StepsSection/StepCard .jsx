@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiUser, FiBox, FiSend } from "react-icons/fi"; // Lucide icons or similar
+import { FiUser, FiBox, FiSend } from "react-icons/fi"; 
 
 const StepCard = () => {
   const steps = [
@@ -25,7 +25,7 @@ const StepCard = () => {
 
   return (
     <section className="bg-[#F9FAFC] py-20 px-4">
-      <div className="container mx-auto">
+      <div className="container mx-auto lg:px-8">
         {/* --- Header --- */}
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-3xl lg:text-5xl font-extrabold text-slate-900">

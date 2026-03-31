@@ -31,7 +31,7 @@ const Pricing = () => {
 
   return (
     <section className="bg-[#FFFFFF] py-20 lg:py-28">
-      <div className="container mx-auto px-6 lg:px-0">
+      <div className="container mx-auto px-6 lg:px-8">
         
         {/* Header Content */}
         <div className="text-center space-y-4 mb-16">
@@ -44,7 +44,7 @@ const Pricing = () => {
         </div>
 
         {/* Pricing Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {plans.map((plan, index) => (
             <div 
               key={index}

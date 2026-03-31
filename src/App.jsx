@@ -30,19 +30,26 @@ function App() {
 
      {/* Banner Section */}
      <Banner/>
+
      <Stats/>
+
   {/* ProductToggle */}
   <ProductToggle activeTab={activeTab} setActiveTab={setActiveTab} cart={cart}/>
 
 {activeTab === "Products" ? 
 <Products productPromise={productPromise} cart={cart} setCart={setCart}/>
+
 : <Cart cart={cart} setCart={setCart}/>}
+
   {/* StepCard Section Added */}
     <StepCard/>
+
     {/* Pricing Card */}
     <Pricing/>
+
     {/* CTA Section  */}
     <CTA/>
+    
     {/* Footer Section */}
     <Footer/>
 

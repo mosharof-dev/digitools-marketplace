@@ -35,7 +35,7 @@ const handleAddToCart = () => {
   };
 
   return (
-    <div className="bg-white border border-transparent hover:border-indigo-400 rounded-xl p-5 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between">
+    <div className="bg-white  border border-transparent hover:border-indigo-400 rounded-xl p-5 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between">
 
       {/* Top */}
       <div className="flex justify-between items-start mb-4">

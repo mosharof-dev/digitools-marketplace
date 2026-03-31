@@ -8,7 +8,7 @@ const Banner = () => {
     
     <section className="bg-white overflow-hidden">
    
-      <div className="container mx-auto px-4 lg:px-0 py-12 lg:py-20 flex flex-col-reverse lg:flex-row items-center justify-between">
+      <div className="container mx-auto px-4 lg:px-8 py-12 lg:py-20 flex flex-col-reverse lg:flex-row items-center justify-between">
         
         {/* --- LEFT SIDE: Content --- */}
         <div className="w-full lg:w-1/2 text-center lg:text-left space-y-6 mt-10 lg:mt-0">
@@ -20,7 +20,7 @@ const Banner = () => {
             </p>
           </div>
 
-          {/* Heading - Size ta optimize kora hoyeche */}
+          {/* Heading -  */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-slate-900 leading-[1.1]">
             Supercharge Your <br className="hidden lg:block" /> 
             <span className="text-slate-800">Digital Workflow</span>

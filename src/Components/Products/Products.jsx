@@ -8,7 +8,7 @@ const Products = ({ productPromise , cart, setCart}) => {
   return (
     <section className="container mx-auto  py-10">
    
-      <div className="container mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="container mx-auto px-8  py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
   {
     products.map(product => (
       <ProductsCart key={product.id} product={product} cart={cart} setCart={setCart} />
