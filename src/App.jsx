@@ -8,26 +8,37 @@ import Footer from './Components/Footer/Footer'
 import CTA from './Components/CTA/CTA'
 import Pricing from './Components/PricingCard/Pricing'
 import StepCard from './Components/StepsSection/StepCard '
+import { useState } from 'react'
+import Products from './Components/Products/Products'
+import Cart from './Components/Cart/Cart'
+import ProductToggle from './Components/ProductToggle/ProductToggle'
 
 function App() {
 
+  const [activeTab, setActiveTab] = useState('Products')
 
   return (
     <>
     {/* NabBar Section */}
-     <NavBar></NavBar>
+     <NavBar/>
 
      {/* Banner Section */}
-     <Banner></Banner>
-     <Stats></Stats>
-  
-  <StepCard></StepCard>
-  {/* Pricing Card */}
-  <Pricing></Pricing>
-  {/* CTA Section  */}
-   <CTA></CTA>
+     <Banner/>
+     <Stats/>
+  {/* ProductToggle */}
+  <ProductToggle activeTab={activeTab} setActiveTab={setActiveTab}/>
+
+{activeTab === "Products" ? 
+<Products/>
+: <Cart/>}
+  {/* StepCard Section Added */}
+    <StepCard/>
+    {/* Pricing Card */}
+    <Pricing/>
+    {/* CTA Section  */}
+    <CTA/>
     {/* Footer Section */}
-  <Footer></Footer>
+    <Footer/>
 
         
     </>

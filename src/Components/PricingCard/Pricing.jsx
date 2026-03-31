@@ -75,10 +75,10 @@ const Pricing = () => {
               </div>
 
               
-              <ul className="space-y-4 mb-8 flex-grow">
+              <ul className="space-y-4 mb-8 flex-1">
                 {plan.features.map((feature, i) => (
                   <li key={i} className="flex items-start gap-3 text-sm">
-                    <FaCheck className={`mt-1 flex-shrink-0 ${plan.isPopular ? "text-white" : "text-green-500"}`} />
+                    <FaCheck className={`mt-1  ${plan.isPopular ? "text-white" : "text-green-500"}`} />
                     <span className="leading-tight">{feature}</span>
                   </li>
                 ))}
