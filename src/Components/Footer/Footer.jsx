@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 lg:px-8">
         
         {/* Top Part: Footer Columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+        <div className="grid grid-cols-2  md:grid-cols-2 lg:grid-cols-5 gap-12  mb-16">
           
           {/* Brand Info  */}
           <div className="lg:col-span-2 space-y-5">
