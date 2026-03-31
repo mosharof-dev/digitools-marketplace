@@ -3,7 +3,7 @@ import NavBarLogo from '../../assets/DigiTools.png'
 import { IoCartOutline } from "react-icons/io5";
 
 
-const Navbar = () => {
+const Navbar = ({cart}) => {
   const navLinks = (
     <>
       <li><a className="hover:text-purple-600 transition">Products</a></li>
@@ -49,7 +49,7 @@ const Navbar = () => {
           {/* Cart Icon */}
           <div className="indicator mr-2 cursor-pointer">
             <IoCartOutline className="text-2xl lg:text-3xl" />
-            <span className="badge badge-sm badge-primary indicator-item border-none text-white">8</span>
+            {cart.length === 0 ? "":<span className="badge badge-sm badge-primary indicator-item border-none text-white">{cart.length}</span>}
           </div>
 
           {/* Buttons */}

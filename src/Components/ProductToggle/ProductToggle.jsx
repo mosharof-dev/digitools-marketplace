@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProductToggle = ({ activeTab, setActiveTab, cartCount }) => {
+const ProductToggle = ({ activeTab, setActiveTab, cart }) => {
   return (
     <section className="py-12 bg-white">
       <div className="container mx-auto px-4 flex flex-col items-center text-center">
@@ -39,7 +39,7 @@ const ProductToggle = ({ activeTab, setActiveTab, cartCount }) => {
                 : 'text-slate-600 hover:bg-gray-50'
             }`}
           >
-            Cart ({cartCount})
+            Cart ({cart.length})
           </button>
         </div>
 

@@ -20,21 +20,23 @@ const productPromise = getProducts()
 function App() {
 
   const [activeTab, setActiveTab] = useState('Products')
+  const [cart, setCart] = useState([]);
+  // console.log(cart, "Hello");
 
   return (
     <>
     {/* NabBar Section */}
-     <NavBar/>
+     <NavBar cart={cart}/>
 
      {/* Banner Section */}
      <Banner/>
      <Stats/>
   {/* ProductToggle */}
-  <ProductToggle activeTab={activeTab} setActiveTab={setActiveTab}/>
+  <ProductToggle activeTab={activeTab} setActiveTab={setActiveTab} cart={cart}/>
 
 {activeTab === "Products" ? 
-<Products productPromise={productPromise}/>
-: <Cart/>}
+<Products productPromise={productPromise} cart={cart} setCart={setCart}/>
+: <Cart cart={cart} setCart={setCart}/>}
   {/* StepCard Section Added */}
     <StepCard/>
     {/* Pricing Card */}

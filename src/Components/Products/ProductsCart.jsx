@@ -1,9 +1,26 @@
 
-
-import React from "react";
 import { HiCheckCircle } from "react-icons/hi";
+import { toast } from "react-toastify";
 
-const ProductsCart = ({ product }) => {
+const ProductsCart = ({ product, cart, setCart }) => {
+
+
+
+const isExist = cart.some(item => item.id === product.id);
+
+const handleAddToCart = () => {
+
+
+  if (isExist) {
+    toast.warning("Already added to cart ");
+    return;
+  }
+
+  
+  toast.success("Product added to cart 🛒");
+
+  setCart(prev => [...prev, product]);
+};
 
   const tagStyles = {
     "best-seller": "bg-orange-100 text-orange-600",
@@ -68,8 +85,15 @@ const ProductsCart = ({ product }) => {
       </ul>
 
       {/* Button */}
-      <button className="w-full py-2 rounded-full text-white bg-linear-to-r from-purple-600 to-indigo-600 hover:opacity-90 transition">
-        Buy Now
+     <button
+        onClick={handleAddToCart}
+        className={`w-full py-2 rounded-full text-white transition ${
+          isExist
+          ? "bg-green-600 cursor-default" 
+          : "bg-linear-to-r from-purple-600 to-indigo-600 hover:opacity-90"
+        }`}
+      >
+        {isExist ? "Added to Cart" : "Buy Now"}
       </button>
 
     </div>
@@ -77,3 +101,4 @@ const ProductsCart = ({ product }) => {
 };
 
 export default ProductsCart;
+
