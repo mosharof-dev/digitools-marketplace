@@ -12,7 +12,11 @@ import { useState } from 'react'
 import Products from './Components/Products/Products'
 import Cart from './Components/Cart/Cart'
 import ProductToggle from './Components/ProductToggle/ProductToggle'
-
+const getProducts = async () => {
+  const res = await fetch('/products.json')
+  return res.json()
+}
+const productPromise = getProducts()
 function App() {
 
   const [activeTab, setActiveTab] = useState('Products')
@@ -29,7 +33,7 @@ function App() {
   <ProductToggle activeTab={activeTab} setActiveTab={setActiveTab}/>
 
 {activeTab === "Products" ? 
-<Products/>
+<Products productPromise={productPromise}/>
 : <Cart/>}
   {/* StepCard Section Added */}
     <StepCard/>

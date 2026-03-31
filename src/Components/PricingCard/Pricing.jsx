@@ -49,7 +49,7 @@ const Pricing = () => {
             <div 
               key={index}
               
-              className={`relative p-8 rounded-3xl border flex flex-col h-full transition-all duration-300 ${
+              className={`relative p-8 rounded-xl border flex flex-col h-full transition-all duration-300 ${
                 plan.isPopular 
                 ? "bg-linear-to-r from-indigo-600 to-purple-600 text-white  shadow-xl   " 
                 : "bg-[#F2F2F2] text-slate-900 border-slate-100 shadow-sm  "
