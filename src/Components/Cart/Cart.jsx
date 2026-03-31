@@ -2,22 +2,25 @@ import React from "react";
 import { HiOutlineTrash, HiOutlineShoppingCart } from "react-icons/hi";
 import { toast } from "react-toastify";
 
-const Cart = ({ cart, setCart }) => {
+const Cart = ({ cart, setCart}) => {
 
-  //  Total price
+  //Total price
   const total = cart.reduce((sum, item) => sum + item.price, 0);
 
-  //  Remove item
-  const handleRemove = (id) => {
-    const updatedCart = cart.filter(item => item.id !== id);
-    setCart(updatedCart);
-    toast.info("Item removed from cart");
-  };
+  const handleRemove = (item) => {
+  const updatedCart = cart.filter(product => product.id !== item.id);
+  setCart(updatedCart); 
+  toast.warning(`${item.name} removed from cart`,{
+    position: "top-center"
+  });
+};
 
-  //  Checkout
+  //Checkout
   const handleCheckout = () => {
     setCart([]);
-    toast.success("Order placed successfully ");
+    toast.success("Order placed successfully ",{
+      position: "top-center"
+    });
   };
 
   return (
@@ -60,11 +63,13 @@ const Cart = ({ cart, setCart }) => {
 
                 {/* Left */}
                 <div className="flex items-center gap-3">
-                  <img
+                 <div className="w-16 h-16 rounded-full bg-white flex justify-center items-center">
+                   <img
                     src={item.icon}
                     alt={item.name}
                     className="w-10 h-10 object-contain"
                   />
+                 </div>
                   <div>
                     <p className="text-sm font-medium text-gray-800">
                       {item.name}
@@ -76,9 +81,10 @@ const Cart = ({ cart, setCart }) => {
                 </div>
 
                 {/* Right (Remove) */}
-                <button
-                  onClick={() => handleRemove(item.id)}
-                  className="flex items-center gap-1 text-sm text-red-500 hover:bg-red-50 px-2 py-1 rounded-md transition"
+      <button
+ 
+  onClick={() => handleRemove(item)}
+    className="flex items-center gap-1 text-sm text-red-500 hover:bg-red-50 px-2 py-1 rounded-md transition"
                 >
                   <HiOutlineTrash className="text-base" />
                   Remove

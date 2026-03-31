@@ -49,11 +49,13 @@ const Pricing = () => {
             <div 
               key={index}
               
-              className={`relative p-8 rounded-xl border flex flex-col h-full transition-all duration-300 ${
-                plan.isPopular 
-                ? "bg-linear-to-r from-indigo-600 to-purple-600 text-white  shadow-xl   " 
-                : "bg-[#F2F2F2] text-slate-900 border-slate-100 shadow-sm  "
-              }`}
+className={`relative p-8 rounded-xl border-2 flex flex-col h-full 
+transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:scale-[1.02] ${
+  plan.isPopular 
+  ? "bg-linear-to-r from-indigo-600 to-purple-600 text-white border-transparent" 
+  : "bg-[#F2F2F2] text-slate-900 border-gray-200 hover:border-purple-500"
+}`}
+
             >
               {/* Popular Badge */}
               {plan.isPopular && (

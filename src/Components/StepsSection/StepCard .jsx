@@ -39,9 +39,10 @@ const StepCard = () => {
         {/* --- Cards Grid --- */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {steps.map((step) => (
-            <div 
+           <div className='animated-border-shell'>
+             <div 
               key={step.id} 
-              className="relative bg-white border border-gray-100 p-10 rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col items-center text-center group"
+              className="relative  bg-white border border-gray-100 p-10 rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col items-center text-center group"
             >
               {/* Floating Number (Absolute Positioning) */}
               <div className="absolute top-6 right-6 bg-indigo-600 text-white text-xs font-bold h-7 w-7 flex items-center justify-center rounded-full shadow-lg group-hover:scale-110 transition-transform">
@@ -61,6 +62,7 @@ const StepCard = () => {
                 {step.description}
               </p>
             </div>
+           </div>
           ))}
         </div>
       </div>

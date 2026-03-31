@@ -12,12 +12,16 @@ const handleAddToCart = () => {
 
 
   if (isExist) {
-    toast.warning("Already added to cart ");
+    toast.info("Already added to cart ",{
+      position: "top-center"
+    });
     return;
   }
 
   
-  toast.success("Product added to cart 🛒");
+  toast.success(`${product.name}  added to cart`,{
+    position: "top-center"
+  });
 
   setCart(prev => [...prev, product]);
 };

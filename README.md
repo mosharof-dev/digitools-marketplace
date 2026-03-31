@@ -1,16 +1,26 @@
-# React + Vite
+# 🎯 DigiTools - Premium Digital Marketplace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DigiTools is a modern, high-performance web application designed for browsing and purchasing premium digital assets. Built with a focus on clean UI/UX, the platform allows users to explore various AI-powered tools, design templates, and productivity software seamlessly.
 
-Currently, two official plugins are available:
+## 🚀 Live Links
+- **Live Demo:** https://digitool-marketplace.netlify.app/
+- **GitHub Repository:** https://github.com/mosharof-dev/digitools-marketplace
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Technologies Used
+- **Frontend:** React.js (v18+)
+- **Styling:** Tailwind CSS & DaisyUI
+- **Icons:** React Icons (Fi, Io5, Hi)
+- **Notifications:** React-Toastify
+- **Data Management:** Dynamic JSON Integration
 
-## React Compiler
+## ✨ Key Features
+* **Dynamic Product Discovery:** Explore a curated list of digital tools with real-time category toggling between "Products" and "Cart" views.
+* **Interactive Shopping Experience:** Add premium tools to your cart with instant feedback via React-Toastify and monitor your selection with a live cart counter in the navbar.
+* **Fully Responsive & Animated UI:** Optimized for all devices (Mobile, Tablet, Desktop) with premium hover animations on step-cards and stats.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📦 Project Requirements Fulfilled
+- ✅ **Figma to Code:** Perfectly converted Figma design into clean, semantic HTML/CSS.
+- ✅ **Advanced Stats & Steps:** Implemented interactive stats and a 3-step onboarding section with modern hover effects.
+- ✅ **Cart Management:** Complete Add-to-Cart and Remove functionality with Proceed to Checkout logic to clear all items.
+- ✅ **Responsive Layout:** Mobile-first approach ensuring the best experience on smaller screens.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
